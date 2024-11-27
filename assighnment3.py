@@ -85,7 +85,7 @@ class_mapping = {
 # Generate descriptive labels
 descriptive_classes = [class_mapping[cls] for cls in original_class_names]
 
-# Define your augmentations
+# Define augmentations
 augmentations = A.Compose([
     A.HorizontalFlip(p=0.5),
     A.Rotate(limit=30, p=0.5),
